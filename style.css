@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+:root{
+  --primary-color: #E6533C;
+  --text-light: white;
+  --text-dark: rgba(255,255, 255, 0.5);
+}
+
+/* common styles */
+
+.text-primary{
+  color: var(--text-light);
+}
+.text-secondary{
+  color: var(--text-dark)
+}
+
+
+
+body{
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: black;
+  color: var(--text-light)
+}
+
+
+
+/* ========== Header Style =============== */
+
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 40px;
+}
+
+#nav-title{
+  font-size: 36px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 120%;
+  color: var(--primary-color);
+}
+
+.nav-items{
+  display: flex;
+  border: 1px solid var(--text-dark);
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-items li{
+  list-style-type: none;
+  margin: 5px 20px;
+  font-weight: bold;
+}
+
+.nav-items li:first-child{
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 45px;
+  margin-left: -35px;
+}
+
+.mobile-menu{
+  display: none;
+  font-size: 26px;
+}
+
+
+
+
+
+
+
+
+
+/* ========= Media Query ============ */
+
+@media screen and (max-width:576px) {
+  
+  .mobile-menu{
+    display: block;
+  }
+  .nav-items{
+    display: none;
+  }
+}
+
+
