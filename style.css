@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap&family=Cedarville+Cursive&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
 /* // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 900 */
 
@@ -29,7 +37,7 @@
   color: var(--text-light);
 }
 .text-secondary{
-  color: var(--text-dark)
+  color: var(--text-dark);
 }
 
 .btn-primary{
@@ -62,7 +70,7 @@
 
 
 body{
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   background-color: black;
   color: var(--text-light)
@@ -71,13 +79,15 @@ body{
 
 
 /* ========== Header Style =============== */
-
+.container{
+  margin: 50px 20px;
+}
 
 nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 20px;
+  margin: 50px 20px;
 }
 
 #nav-title{
@@ -106,7 +116,7 @@ nav{
   background-color: var(--primary-color);
   padding: 10px 20px;
   border-radius: 45px;
-  margin-left: -35px;
+  margin-left: 5px;
 }
 
 .mobile-menu{
@@ -132,7 +142,7 @@ nav{
   font-size: 78px;
   font-weight: 900;
   line-height: 120%;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 .cursive{
   font-family: "Cedarville Cursive", cursive;
@@ -141,6 +151,11 @@ nav{
   font-size: 120px;
 }
 
+
+.hero-description{
+  margin-bottom: 28px;
+  line-height: 24px;
+}
 
 
 /* -------------- */
@@ -153,8 +168,7 @@ nav{
 }
 
 .hero-image> img{
-  width: 70%;
-
+  width:60%;
 }
 
 .badge {
@@ -196,8 +210,68 @@ nav{
 }
 
 
+/* ========== Change your habit section ========= */
+
+.change-habits{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section-heading{
+  margin-bottom: 60px;
+}
+.section-heading>h2{
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+.section-heading>p{
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+.factors{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+}
+
+.factor-card{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  /* border: 1px solid white; */
+}
+/* .img-frame{
+  height: 180px;
+  width: 180px;
+  margin-bottom: 30px;
+  border: 3px solid var(--text-dark);
+  border-radius: 50%;
+} */
+.factor-card img{
+  width: 90%;
+  border-radius: 50%;
+  border: 3px solid var(--text-dark);
+  margin-bottom: 30px;
+}
 
 
+.factor-card>h3, p{
+  margin-bottom: 10px;
+}
+
+.factor-card>h3{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+}
 
 
 
@@ -212,6 +286,50 @@ nav{
   .nav-items{
     display: none;
   }
+
+
+
+  /* ---- Hero section ------ */
+  .hero-section{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-text{
+    width: calc(100% - 80px);
+    margin-bottom: 50px;
+  }
+
+  .hero-text>h2{
+    font-size: 36px;
+  }
+  .cursive{
+    font-size: 55px;
+  }
+
+  .hero-image{
+    /* width: calc((100% - 80px)); */
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .hero-image> img{
+    width: 80%;
+  }
+
+
+  /* ---- change habits seciton */
+
+  .factors{
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
+
+
+
+
 
 
