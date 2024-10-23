@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap&family=Cedarville+Cursive&display=swap');
 /* // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 900 */
 
@@ -8,6 +8,13 @@
   font-weight: normal;
   font-style: normal;
 }
+
+.cedarville-cursive-regular {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 
 :root{
@@ -25,6 +32,33 @@
   color: var(--text-dark)
 }
 
+.btn-primary{
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--text-light);
+  font-weight: bold;
+  padding: 16px 40px;
+  border-radius: 39px;
+  margin-right: 10px;
+  
+}
+.btn-secondary{
+  background-color: transparent;
+  border: 1px solid var(--text-dark);
+  color: var(--text-light);
+  font-weight: bold;
+  padding: 16px 40px;
+  border-radius: 39px;
+  margin-right: 10px;
+  
+}
+
+
+/* ------------------- */
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
 
 
 body{
@@ -43,7 +77,7 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 40px;
+  margin: 10px 20px;
 }
 
 #nav-title{
@@ -80,6 +114,86 @@ nav{
   font-size: 26px;
 }
 
+
+/* -------- Hero section----------- */
+
+.hero-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 20px;
+}
+
+.hero-text{
+  width: calc((100% - 80px)/2);
+}
+
+.hero-text> h2{
+  font-size: 78px;
+  font-weight: 900;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+.cursive{
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 120px;
+}
+
+
+
+/* -------------- */
+.hero-image{
+  width: calc((100% - 80px)/2);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image> img{
+  width: 70%;
+
+}
+
+.badge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 10px 10px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+  width: 190px;
+  height: 98px;
+}
+
+.badge h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1px;
+}
+
+.badge p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--text-dark);
+  margin: 1px;
+}
+
+#badge1{
+  position: absolute;
+  top: 190px;
+  right: 50px;
+}
+
+#badge2{
+  position: absolute;
+  bottom: 60px;
+  left: -10px;
+}
 
 
 
