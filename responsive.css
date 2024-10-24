@@ -1,0 +1,59 @@
+/* ================================
+*          Media Query 
+=================================== */
+
+@media screen and (max-width:576px) {
+  
+  .mobile-menu{
+    display: block;
+  }
+  .nav-items{
+    display: none;
+  }
+
+
+
+  /* ---- Hero section ------ */
+  .hero-section{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-text{
+    width: calc(100%);
+    margin-bottom: 50px;
+  }
+
+  .hero-text>h2{
+    font-size: 36px;
+  }
+  .cursive{
+    font-size: 55px;
+  }
+
+  .hero-image{
+    /* width: calc((100% - 80px)); */
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .hero-image> img{
+    width: 80%;
+  }
+
+
+  /* ---- change habits seciton */
+
+  .factors{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+}
+
+
+
+
+
