@@ -48,7 +48,7 @@
   /* ---- change habits seciton */
 
   .factors{
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     gap: 40px;
   }
 
@@ -60,5 +60,17 @@
   .run-left, .outer-wrapper{
     width: 100%;
   }
+  /* ====== Meet team====== */
+
+  .trainers{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+
+  .footer-cols{
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+  }
 
 }
+
