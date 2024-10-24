@@ -51,9 +51,14 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;
   }
+
+
+  .run{
+    flex-direction: column;
+  }
+
+  .run-left, .outer-wrapper{
+    width: 100%;
+  }
+
 }
-
-
-
-
-
