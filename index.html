@@ -115,13 +115,17 @@
     <section class="bottom-space">
       <div class="container section-heading bmi-heading mobilespaceX">
         <h2>BMI Calculator</h2>
-        <p class="text-secondary">The Body Mass Index (BMI) Calculator can be used to calculate BMI value and corresponding weight status while taking age into consideration. Use the "Metric Units" tab for the International System of Units or the "Other Units" tab to convert units into either US or metric units. Note that the calculator also computes the Ponderal Index in addition to BMI, both of which are discussed below in detail.</p>
+        <p class="text-secondary">The Body Mass Index (BMI) Calculator can be used to calculate BMI value and
+          corresponding weight status while taking age into consideration. Use the "Metric Units" tab for the
+          International System of Units or the "Other Units" tab to convert units into either US or metric units. Note
+          that the calculator also computes the Ponderal Index in addition to BMI, both of which are discussed below in
+          detail.</p>
       </div>
       <div class="bmi-chart-wrapper">
         <div class="container bmi-parent">
           <div class="bmi-chart">
             <h3 class="bmi-chart-heading">BMI Calculator Chart</h3>
-  
+
             <table>
               <tr>
                 <th>BMI</th>
@@ -148,29 +152,60 @@
 
           <div class="calculate-bmi">
             <h3 class="bmi-chart-heading">Calculate your BMI</h3>
-            <p class="description">Your calorie intake depends on your BMI (Body mass index). Tracking your BMI helps you stay healthy</p>
+            <p class="description">Your calorie intake depends on your BMI (Body mass index). Tracking your BMI helps
+              you stay healthy</p>
 
-            <div class="bmi-form">
-              <input type="text" placeholder="Height/cm">
-              <input type="text" placeholder="Weight/kg">
-              <input type="number" placeholder="Age">
-              <select name="Sex" id="">
-                <option value="" disabled selected>Sex</option>
-                <option value="">Male</option>
-                <option value="">Female</option>
-                <option value="">Other</option>
-              </select>
-              <select name="activity" id="activity-input">
-                <option value="" disabled selected>Select an activity factor</option>
-                <option value="">Hard working</option>
-                <option value="">Light movement</option>
-                <option value="">No movement</option>
-              </select>
-            </div>
+            <form action="">
+              <div class="bmi-form">
+                <input type="text" placeholder="Height/cm">
+                <input type="text" placeholder="Weight/kg">
+                <input type="number" placeholder="Age">
+                <select name="Sex" id="">
+                  <option value="" disabled selected>Sex</option>
+                  <option value="">Male</option>
+                  <option value="">Female</option>
+                  <option value="">Other</option>
+                </select>
+                <select name="activity" id="activity-input">
+                  <option value="" disabled selected>Select an activity factor</option>
+                  <option value="">Hard working</option>
+                  <option value="">Light movement</option>
+                  <option value="">No movement</option>
+                </select>
+              </div>
 
-            <button class="btn-primary">Calculate</button>
+              <button class="btn-primary">Calculate</button>
+            </form>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="section-heading diet mobilespaceX">
+        <h2>Personalized Diet Plan</h2>
+        <p class="text-secondary">Fuel your fitness journey with a diet plan based on your specific goals. Our team of experts will create a customized meal plan just for you!</p>
+
+        <div class="diet-plan-benefits">
+          <div class="benefit-item">
+            <img src="./images/diet1.jpg" alt="">
+            <h3>Personalized Nutrition</h3>
+            <p>Get a diet plan that caters to your fitness level and preferences.</p>
+          </div>
+          <div class="benefit-item">
+            <img src="./images/diet2.jpg" alt="">
+            <h3>Track Progress</h3>
+            <p>Monitor your calorie intake and nutritional needs with ease.</p>
+          </div>
+          <div class="benefit-item">
+            <img src="./images/diet3.jpg" alt="">
+            <h3>Expert Guidance</h3>
+            <p>Our expert nutritionists ensure you stay on track toward achieving your health goals.</p>
+          </div>
+        </div>
+
+        <button class="btn-secondary">Start Your Plan Now</button>
+
       </div>
     </section>
 
