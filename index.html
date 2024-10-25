@@ -12,7 +12,7 @@
 
 <body class="inter-normal">
   <header>
-    <nav class="container">
+    <nav class="container mobilespaceX">
       <h1 id="nav-title">Fitness</h1>
       <ul class="nav-items">
         <li>Home</li>
@@ -23,7 +23,7 @@
       <p class="mobile-menu"><i class="fa-solid fa-bars"></i></p>
     </nav>
 
-    <div class="container">
+    <div class="container mobilespaceX">
       <!-- Hero section: 2 column-->
       <div class="hero-section">
         <div class="hero-text">
@@ -63,7 +63,7 @@
 
 
   <main>
-    <section class="container change-habits bottom-space">
+    <section class="container change-habits bottom-space mobilespaceX">
       <!-- section 2: Change your habits -->
       <div class="section-heading">
         <h2>Change Your Habits</h2>
@@ -94,7 +94,7 @@
       </div>
     </section>
 
-    <section class="container bottom-space">
+    <section class="container bottom-space mobilespaceX">
       <!-- section 3: Run extra Mile  -->
       <div class="run space-x">
         <div class="run-left section-heading">
@@ -112,7 +112,68 @@
 
     </section>
 
-    <section class="container bottom-space">
+    <section class="bottom-space">
+      <div>
+
+      </div>
+      <div class="bmi-chart-wrapper">
+        <div class="container bmi-parent mobilespaceX">
+          <div class="bmi-chart">
+            <h3 class="bmi-chart-heading">BMI Calculator Chart</h3>
+  
+            <table>
+              <tr>
+                <th>BMI</th>
+                <th>Weight Status</th>
+              </tr>
+              <tr>
+                <td>Below 18.5</td>
+                <td>Underweight</td>
+              </tr>
+              <tr>
+                <td>18.5 - 24.9</td>
+                <td>Healthy</td>
+              </tr>
+              <tr>
+                <td>25.0 - 29.9</td>
+                <td>Overweight</td>
+              </tr>
+              <tr>
+                <td>30.0 - and Above</td>
+                <td>Obese</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="calculate-bmi">
+            <h3 class="bmi-chart-heading">Calculate your BMI</h3>
+            <p class="description">Your calorie intake depends on your BMI (Body mass index). Tracking your BMI helps you stay healthy</p>
+
+            <div class="bmi-form">
+              <input type="text" placeholder="Height/cm">
+              <input type="text" placeholder="Weight/kg">
+              <input type="number" placeholder="Age">
+              <select name="Sex" id="">
+                <option value="" disabled selected>Sex</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+                <option value="">Other</option>
+              </select>
+              <select name="activity" id="activity-input">
+                <option value="" disabled selected>Select an activity factor</option>
+                <option value="">Hard working</option>
+                <option value="">Light movement</option>
+                <option value="">No movement</option>
+              </select>
+            </div>
+
+            <button class="btn-primary">Calculate</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container bottom-space mobilespaceX">
       <!-- Meet our team -->
       <div class="team-container space-x">
         <div class="section-heading">
@@ -155,13 +216,15 @@
         </div>
       </div>
     </section>
+
   </main>
   <footer>
-    <div class="container">
+    <div class="container mobilespaceX">
       <div class="footer-cols">
         <div>
           <h1 class="footer-title">Fitness</h1>
-          <p class="text-secondary">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+          <p class="text-secondary">We believe fitness should be accessible to everyone, everywhere, regardless of
+            income or access to a gym. With hundreds of professional workouts.</p>
         </div>
         <div class="footer-menu">
           <h3>Get Started</h3>
@@ -176,13 +239,13 @@
           <h3>Get Started</h3>
           <ul>
             <li>Fitness</li>
-            <li>Platform Us</li>
-            <li>Workout Library Program</li>
+            <li>Platform</li>
+            <li>Workout Library</li>
             <li>App Design</li>
           </ul>
         </div>
       </div>
-      <div  class="copyright">
+      <div class="copyright">
         <hr class="text-secondary">
         <p class="text-secondary">All right reserved @Fitness 2024</p>
       </div>
