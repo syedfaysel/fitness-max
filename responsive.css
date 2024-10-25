@@ -24,6 +24,7 @@
     border-radius: 39px;
     margin-right: 10px;
     cursor: pointer;
+    margin-bottom: 10px;
   }
 
 
@@ -109,10 +110,12 @@
   }
 
 
+
   .bmi-parent{
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
+    padding: 30px 20px;
   }
 
   .bmi-chart>table{

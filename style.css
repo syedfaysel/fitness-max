@@ -338,7 +338,6 @@ p {
 
 .bmi-chart-wrapper{
   background-color: var(--secondary-bg-color);
-  padding: 58px 0;
 }
 
 .bmi-parent{
@@ -346,6 +345,7 @@ p {
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   gap: 50px;
+  padding: 58px 0;
 }
 
 .bmi-chart-heading{
@@ -400,9 +400,9 @@ td{
   font-size: 16px;
   color: var(--text-dark);
 }
-select option {
-  margin: 40px;
-  padding: 100px;
+select option{
+  margin: 10px;
+  padding: 10px;
   background: var(--secondary-bg-color);
   border: none;
   border-radius: 20px;
@@ -410,10 +410,6 @@ select option {
   /* text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); */
 }
 
-.bmi-form:scope{
-  border: none;
-  outline: none;
-}
 
 
 #activity-input{
