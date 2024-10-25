@@ -328,6 +328,12 @@ p {
   transform: scale(2.4);
 }
 
+/* ---------- BMI heading -------*/
+.bmi-heading{
+  padding-left: 150px;
+  padding-right: 120px;
+}
+
 /* ---------- BMI Chart--------- */
 
 .bmi-chart-wrapper{

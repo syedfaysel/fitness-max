@@ -57,8 +57,9 @@
   }
   
   .hero-image> img{
-    width: 100%;
-    transform: scale(1.2);
+    width: 90%;
+    transform: scale(1.1);
+    
   }
 
 
@@ -101,6 +102,13 @@
     width: 100%;
   }
   /* ========= BMI ========== */
+
+  .bmi-heading{
+    padding-left: 0px;
+    padding-right: 10px;
+  }
+
+
   .bmi-parent{
     grid-template-columns: 1fr;
     align-items: center;
